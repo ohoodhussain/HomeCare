@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="/app.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="node_modules/Datepicker.js/dist/css/datepicker.material.css">
+    <script src="node_modules/Datepicker.js/dist/datepicker.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <title>Form Booking</title>
+</head>
+<body>
+    <!--coding the form for booking service-->
+    <!--creat a container to hold all the form element-->
+    <section id="form">
+        <!--creat div for the main titile , subtitile and hero img-->
+        <div class="formHeader">
+            <!--seprate between the titles and the img by puting the titiles insaid div-->
+            <div class="formTitile">
+                <h2>Book Your Service With Home Care</h2>
+                <p>Fil Your Information below:</p>
+            </div>
+            <img class="formImg" src="/img/cleaning service-amico.png" alt="cleaning img">
+        </div>
+        <!--create a div and insaid this div creat a form element-->
+        <div class="userInformation">
+            <!--The action attribute specifies where to send the form-data when a form is submitted-->
+            <form class="form-Item" action="https://formsubmit.co/hussainohood@gmail.com" method="post">
+                <input  class="moveToLeft40Px" type="text" name="name" placeholder="First Name">
+                <input  class="moveToLeft40Px" type="text" name="name"placeholder="Last Name">
+                <input  class="moveToLeft40Px" type="email" name="email" placeholder="Email"> 
+                <input   class="moveToLeft40Px" type="text" name="number"placeholder="phone Nuber">
+                <span>Choose Date</span>
+                <input type="datetime-local" placeholder="slect date and time">
+
+ 
+
+                <!--creat drop down list to allow user to slect service-->
+                <label for="serviceList">Choose a service</label>
+                <select name="serviceList" id="serviceList"  >
+                    <option class="moveToLeft40Px" value="AC Repair">AC Repair</option>
+                    <option  class="moveToLeft40Px" value="House Cleaning">House Cleaning</option>
+                    <option  class="moveToLeft40Px" value="Carpenter">Carpenter</option>
+                    <option  class="moveToLeft40Px" value="Electrician">Electrician</option>
+                </select>
+                <button   class="moveToLeft40Px" type="submit"> Submit</button>
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>

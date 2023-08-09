@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "date-and-time": "^3.0.0",
+    "Datepicker.js": "^0.1.1",
+    "flatpickr": "^4.6.13"
+  }
+}

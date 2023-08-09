@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/da494c7ca6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="/app.js"></script>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ <link rel="stylesheet" href="node_modules/Datepicker.js/dist/css/datepicker.material.css">
+<script src="node_modules/Datepicker.js/dist/datepicker.js"></script>
+    <title>HomeCare</title>
+</head>
+<body>
+    <section id="landing-page" > 
+        <header>
+            <section class="logoHeaderSection">
+                <img src="/img/ohood_home_care._logo.dark_blue.written_words_6f8b0870-8de0-4609-8d7a-b623f4d7a221-removebg.png" alt="_logo">
+                <nav class="novigationMenu">
+                    <ul>
+                        <li>Services</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </nav>
+            
+            </section>
+            <nav id="toggleMenu" class="toggleMenu">
+                <ul>
+                    <li> <a href="#">Services</a> </li>
+                    <li><a href="#"> About Us</a></li>
+                    <li><li><a href="#"> Contact Us</a></li></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <button onclick="closeToggleMenu()" id="CloseMenuButton" class="CloseMenuButton"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></button>
+                <button onclick="openToggleMenu()" id="menuButton" class="menuButton"><i class="fa fa-bars"></i></button>
+            </div>
+            <section class="imgHeroSection">
+                <img src="img/hero_image .png" alt="hous pic">
+                <div class="imgHeroSectionDiv">
+                    <h1>ONE STOP HOME SERVICE</h1>
+                    <P>Home Care is a one-stop solution that 
+                        caters to all your home maintenance
+                        service needs at a short span of time
+                    </P>
+                    <a href="form.html">
+                    <button class="bookNow">
+                        Book Now
+                    </button>
+                    </a>
+                </div>
+            </section>
+        </header>
+        <section class="middleSection">
+            <div class="user">
+                <i class="fa fa-headset"></i>
+                <p>Dedicated Relationship Manager</p>
+            </div>
+            <div class="user">
+                <i  class="fa fa-wrench" class="userIcon"></i>
+                <p>Trained In-House Professionals</p>
+            </div>
+            <div class="user">
+                <i class="fa fa-certificate"></i>
+                <p class="userP">100% Service Warranty</p>
+            </div>
+            <div class="user">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px" viewBox="0 0 24 24" width="48px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><path d="M4,18v-0.65c0-0.34,0.16-0.66,0.41-0.81C6.1,15.53,8.03,15,10,15c0.03,0,0.05,0,0.08,0.01c0.1-0.7,0.3-1.37,0.59-1.98 C10.45,13.01,10.23,13,10,13c-2.42,0-4.68,0.67-6.61,1.82C2.51,15.34,2,16.32,2,17.35V20h9.26c-0.42-0.6-0.75-1.28-0.97-2H4z"/><path d="M10,12c2.21,0,4-1.79,4-4s-1.79-4-4-4C7.79,4,6,5.79,6,8S7.79,12,10,12z M10,6c1.1,0,2,0.9,2,2s-0.9,2-2,2 c-1.1,0-2-0.9-2-2S8.9,6,10,6z"/><path d="M20.75,16c0-0.22-0.03-0.42-0.06-0.63l1.14-1.01l-1-1.73l-1.45,0.49c-0.32-0.27-0.68-0.48-1.08-0.63L18,11h-2l-0.3,1.49 c-0.4,0.15-0.76,0.36-1.08,0.63l-1.45-0.49l-1,1.73l1.14,1.01c-0.03,0.21-0.06,0.41-0.06,0.63s0.03,0.42,0.06,0.63l-1.14,1.01 l1,1.73l1.45-0.49c0.32,0.27,0.68,0.48,1.08,0.63L16,21h2l0.3-1.49c0.4-0.15,0.76-0.36,1.08-0.63l1.45,0.49l1-1.73l-1.14-1.01 C20.72,16.42,20.75,16.22,20.75,16z M17,18c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S18.1,18,17,18z"/></g></g></svg>
+                <p>One Stop Maintenance</p>
+            </div>
+        </section>
+        <section class="serviceSection snaps-inline  ">
+            <div class="serviceSectionContanier unset">
+                <img class="unset" src="/img/Electrician-cuate.png" alt="Electrician-cuate">
+                <div class="unset">
+                    <h3>AC Repair</h3>
+                    <p>Efficient repairs and maintenance for your window air conditioning units,
+                        ensuring optimal cooling performance
+                    </p>
+                    <a href="form.html">
+                    <button>Book Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="serviceSectionContanier  ">
+                <img class="unset" src="/img/cleaning service-bro.png" alt="cleaning">
+                <div class="unset">
+                    <h3>House Cleaning</h3>
+                    <p> Enjoy affordable cleaning services with our 
+                        unmatched prices and flexible packages.
+                    </p>
+                    <a href="form.html">
+                        <button>Book Now</button>
+                        </a>
+                </div>
+            </div>
+            <div class="serviceSectionContanier  ">
+                <img src="/img/Woodworker-cuate.png" alt="Woodworker">
+                <div >
+                    <h3>Carpenter</h3>
+                    <p> Do you need custom carpentry services? We can handle everything from custom-built bookcases,
+                        cabinets, entertainment centers and more.
+                    </p>
+                    <a href="form.html">
+                        <button>Book Now</button>
+                        </a>
+                </div>
+            </div>
+            <div class="serviceSectionContanier unset">
+                <img src="/img/Electrician-cuate.png" alt="Electrician">
+                <div class="unset">
+                    <h3>Electrician</h3>
+                    <p>Professional electricians featured on ServiceMarket will be able to provide installing regular indoor lights or outdoor lights, or even special lighting features such as chandeliers , 
+                        as well as numerous electrical repair services.
+                    </p>
+                    <a href="form.html">
+                        <button>Book Now</button>
+                        </a>
+                </div>
+            </div>
+        </section>
+        <section class="cstumarSection .snaps-inline">
+            <div class="cstumarSectionDiv">
+                <img src="img/4 star.png" alt="4 star">
+                <p>Thank you, is the best between all the company</p>
+            </div>
+            <div class="cstumarSectionDiv">
+                <img class="star" src="img/5 star.png" alt="5 star">
+                <p>Make life Easier and more confutable.</p>
+            </div>
+            <div class="cstumarSectionDiv">
+                <img src="img/5 star.png" alt="5 star">
+                <p>Grate High quality service</p>
+            </div>
+            <div class="cstumarSectionDiv">
+                <img src="img/4 star.png" alt="4 star">
+                <p>I was lucky to have maimonh from Uganda she is amazing person and very active.</p>
+            </div>
+        </section>
+        <footer>
+            <h2>HOME-CARE: ONE STOP HOME SERVICE</h2>
+            <p>HomeCare is a one-stop solution that caters to all your home maintenance service needs at a short span of time.Currently based out of bangalore it helps in curating the home service vendors as well as provides for an arrayof services ranging from repairing, house cleaning, painting, carpentry work, pest control and other handymentasks. It connects the homemakers and owners with the best home service professionals to have a hassle 
+                free experience in this busy life schedule.</p>
+            <a href="form.html">   
+            <button>Book Service Know</button>
+            </a> 
+        </footer>
+    </section>
+</body>
+</html>
